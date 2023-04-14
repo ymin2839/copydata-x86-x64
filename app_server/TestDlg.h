@@ -14,6 +14,7 @@ protected:
 	virtual BOOL OnInitDialog();
 
 	afx_msg void OnOK();
+	afx_msg void OnDataSize();
 
 	afx_msg BOOL OnCopyData(CWnd* pWnd, COPYDATASTRUCT* pCopyDataStruct);
 

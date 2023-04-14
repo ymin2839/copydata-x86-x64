@@ -24,6 +24,7 @@ void CTestDlg::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CTestDlg, CDialogEx)
 	ON_BN_CLICKED(IDOK, OnOK)
+	ON_BN_CLICKED(ID_DATASIZE, OnDataSize)
 	ON_WM_COPYDATA()
 END_MESSAGE_MAP()
 
@@ -51,7 +52,7 @@ void CTestDlg::OnOK()
 	data.num1 = 11;
 	data.num2 = 22;
 	data.num3 = 33;
-	data.num4 = 44;
+	//data.num4 = 44;
 
 	HWND hwnd = ::FindWindow(NULL, L"server");
 	if (hwnd)
@@ -103,4 +104,19 @@ BOOL CTestDlg::OnCopyData(CWnd* pWnd, COPYDATASTRUCT* pCopyDataStruct)
 	AfxMessageBox(msg);
 
 	return TRUE;
+}
+
+void CTestDlg::OnDataSize()
+{
+	CString msg;
+	msg.AppendFormat(L"stdata size : %d", sizeof(STDATA));	
+	msg.AppendFormat(L"\n char size : %d", sizeof(char));
+	msg.AppendFormat(L"\n WCHAR size : %d", sizeof(WCHAR));
+	msg.AppendFormat(L"\n char* size : %d", sizeof(char*));
+	msg.AppendFormat(L"\n WCHAR* size : %d", sizeof(WCHAR*));
+	msg.AppendFormat(L"\n int size : %d", sizeof(int));
+	msg.AppendFormat(L"\n DWORD size : %d", sizeof(DWORD));
+	msg.AppendFormat(L"\n UINT_PTR size : %d", sizeof(UINT_PTR));
+	msg.AppendFormat(L"\n UINT size : %d", sizeof(UINT));
+	AfxMessageBox(msg);
 }
