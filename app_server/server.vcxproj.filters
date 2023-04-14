@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDlg.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>source files</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>source files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDlg.h">
+      <Filter>source files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\DefineStruct.h">
+      <Filter>header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source files">
+      <UniqueIdentifier>{6cd37ae4-9b4e-4bfd-b807-8ed2c05689ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header files">
+      <UniqueIdentifier>{ccf0cbfe-0fb5-42ac-b38d-339a36f79fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource files">
+      <UniqueIdentifier>{ec91f99b-516f-4ef9-b9be-db8de3121f05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Test.ico">
+      <Filter>resource files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Test.rc">
+      <Filter>resource files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Test.rc2">
+      <Filter>resource files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
